@@ -1,0 +1,16 @@
+CREATE TABLE ator(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1), 
+    nome VARCHAR(250)NOT NULL,
+    nacionalidade VARCHAR(100)NOT NULL,
+    idade INT NOT NULL
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
+CREATE TABLE personagem(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1), 
+    ator_id BIGINT NOT NULL,
+    papel VARCHAR(250)NOT NULL,
+    Foreign Key(ator_id) REFERENCES ator(id)
+);
