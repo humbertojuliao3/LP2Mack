@@ -1,0 +1,65 @@
+Fri Apr 03 19:44:09 BRT 2015 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Fri Apr 03 19:44:09 BRT 2015:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-014c-8174-aa92-0000338c820c
+no diretório de banco de dados /Users/humbertojuliao/facul/LP2Mack/DB/app 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b27
+user.dir=/Applications/NetBeans/glassfish-4.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.10.2
+derby.system.home=/Users/humbertojuliao/facul/LP2Mack/DB
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+Fri Apr 03 19:44:11 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = app), (DRDAID = ��������.����-435721835847045973{1}), Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+Fri Apr 03 19:44:11 BRT 2015 : Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+java.sql.SQLException: Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.javaException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.wrapInSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+----------------------------------------------------------------
+Fri Apr 03 19:44:11 BRT 2015:
+Encerrando a instância a816c00e-014c-8174-aa92-0000338c820c
+	at org.apache.derby.impl.jdbc.EmbedConnection.close(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.close(Unknown Source)
+	at org.apache.derby.impl.drda.Database.close(Unknown Source)
+	at org.apache.derby.impl.drda.Session.close(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.closeSession(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 12 more
+Caused by: org.apache.derby.iapi.error.ShutdownException: 
+	at org.apache.derby.iapi.services.context.ContextManager.checkInterrupt(Unknown Source)
+	at org.apache.derby.iapi.services.context.ContextManager.getContext(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.getStatementContext(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.doRollback(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.userRollback(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.rollback(Unknown Source)
+	... 6 more
+Fri Apr 03 19:44:11 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = app), (DRDAID = ��������.����-435721835847045973{1}), Execution failed because of Permanent Agent Error: SVRCOD = 40; RDBNAM = app;create=true; diagnostic msg = Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+Fri Apr 03 19:44:11 BRT 2015 : Execution failed because of Permanent Agent Error: SVRCOD = 40; RDBNAM = app;create=true; diagnostic msg = Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+org.apache.derby.impl.drda.DRDAProtocolException: Execution failed because of Permanent Agent Error: SVRCOD = 40; RDBNAM = app;create=true; diagnostic msg = Exceção Java: ': org.apache.derby.iapi.error.ShutdownException'.
+	at org.apache.derby.impl.drda.DRDAProtocolException.newAgentError(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.sendUnexpectedException(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.closeSession(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Fri Apr 03 19:44:11 BRT 2015 Thread[DRDAConnThread_3,5,main] (DATABASE = app), (DRDAID = {2}), Banco de dados 'app' fechado.
+----------------------------------------------------------------
+Fri Apr 03 19:44:15 BRT 2015:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância ed8940a7-014c-8174-aa92-0000338c820c
+no diretório de banco de dados /Users/humbertojuliao/facul/LP2Mack/DB/app 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_40-b27
+user.dir=/Applications/NetBeans/glassfish-4.1/javadb
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.10.2
+derby.system.home=/Users/humbertojuliao/facul/LP2Mack/DB
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''

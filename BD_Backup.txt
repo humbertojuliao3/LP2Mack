@@ -7,10 +7,69 @@ CREATE TABLE ator(
 );
 --inicia declaração de linhas
 --finaliza declaração de linhas
+CREATE TABLE genero(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1), 
+    nome VARCHAR(250)NOT NULL,
+    descricao VARCHAR(250)NOT NULL
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
+CREATE TABLE filme(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1),
+    genero_id BIGINT NOT NULL,
+    titulo VARCHAR(250)NOT NULL,
+    duracao VARCHAR(10)NOT NULL,
+    classEtaria VARCHAR(100)NOT NULL,
+    diretor VARCHAR(250)NOT NULL,
+    distribuidora VARCHAR(150)NOT NULL,
+    status VARCHAR(100)NOT NULL,
+
+    Foreign Key(genero_id) REFERENCES genero(id)
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
 CREATE TABLE personagem(
     id BIGINT NOT NULL
     PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1), 
     ator_id BIGINT NOT NULL,
+    filme_id BIGINT NOT NULL,
     papel VARCHAR(250)NOT NULL,
-    Foreign Key(ator_id) REFERENCES ator(id)
+    Foreign Key(ator_id) REFERENCES ator(id),
+    Foreign Key(filme_id) REFERENCES filme(id)
 );
+
+--inicia declaração de linhas
+--finaliza declaração de linhas
+CREATE TABLE sala(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1),
+    numSala INT NOT NULL,
+    qtdCadeirasTotal INT NOT NULL,
+    qtdCadeirasESP INT NOT NULL,
+    status VARCHAR(100) NOT NULL
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
+CREATE TABLE sessao(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1),
+    horario DATE NOT NULL,
+    filme_id BIGINT NOT NULL,
+    sala_id BIGINT NOT NULL,
+    Foreign Key(filme_id) REFERENCES filme(id),
+    Foreign Key(sala_id) REFERENCES sala(id)
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
+CREATE TABLE ingresso(
+    id BIGINT NOT NULL
+    PRIMARY KEY GENERATED ALWAYS AS IDENTITY(START WITH 1, INCREMENT BY 1),
+    tipo VARCHAR(50) NOT NULL,
+    valor INT NOT NULL,
+    sessao_id BIGINT NOT NULL,
+    Foreign Key(sessao_id) REFERENCES sessao(id)
+);
+--inicia declaração de linhas
+--finaliza declaração de linhas
