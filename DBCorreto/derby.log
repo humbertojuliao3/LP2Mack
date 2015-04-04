@@ -1,0 +1,33 @@
+Sat Apr 04 00:58:27 BRT 2015 : Apache Derby Servidor de Rede - 10.10.1.3 - (1557168) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Sat Apr 04 00:58:27 BRT 2015:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): instância a816c00e-014c-8294-6c07-000071eae9f3
+no diretório de banco de dados C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorreto\SistemaCinema 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_11-b12
+user.dir=C:\Program Files\Java\jdk1.8.0_11\db
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
+derby.system.home=C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorreto
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Apr 04 00:58:34 BRT 2015:
+Encerrando a instância a816c00e-014c-8294-6c07-000071eae9f3
+Sat Apr 04 00:58:34 BRT 2015 Thread[DRDAConnThread_3,5,main] (DATABASE = SistemaCinema), (DRDAID = {2}), Banco de dados 'SistemaCinema' fechado.
+----------------------------------------------------------------
+Sat Apr 04 00:58:40 BRT 2015:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): instância ed8940a7-014c-8294-6c07-000071eae9f3
+no diretório de banco de dados C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorreto\SistemaCinema 
+
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_11-b12
+user.dir=C:\Program Files\Java\jdk1.8.0_11\db
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
+derby.system.home=C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorreto
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Apr 04 01:11:17 BRT 2015: Shutting down Derby engine
