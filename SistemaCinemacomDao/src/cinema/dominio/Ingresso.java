@@ -4,6 +4,7 @@ package cinema.dominio;
 public class Ingresso {
     private String tipo;
     private double valor;
+    private Sessao sessao;
 
     public Ingresso(String tipo, double valor) {
         this.tipo = tipo;
@@ -25,6 +26,16 @@ public class Ingresso {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    public Sessao getSessao() {
+        return sessao;
+    }
+
+    public void setSessao(Sessao sessao) {
+        this.sessao = sessao;
+    }
+
+    
     
     
 }

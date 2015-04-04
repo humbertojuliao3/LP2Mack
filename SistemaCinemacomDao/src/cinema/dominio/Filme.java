@@ -1,6 +1,8 @@
 
 package cinema.dominio;
 
+import java.util.List;
+
 
 public class Filme {
     private String titulo;
@@ -9,6 +11,8 @@ public class Filme {
     private String diretor;
     private String distribuidora;
     private boolean status;
+    private List<Personagem> personagem;
+    private Genero genero;
 
     public Filme(String titulo, long duracao, String classEtaria, String diretor, String distribuidora, boolean status) {
         this.titulo = titulo;
@@ -65,6 +69,24 @@ public class Filme {
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    public List<Personagem> getPersonagem() {
+        return personagem;
+    }
+
+    public void setPersonagem(List<Personagem> personagem) {
+        this.personagem = personagem;
+    }
+
+    
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
     
     

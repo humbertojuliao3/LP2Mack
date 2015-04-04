@@ -29,3 +29,5 @@ os.arch=amd64
 os.version=6.3
 derby.system.home=C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorretoAgoraVai
 Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Sat Apr 04 02:05:52 BRT 2015: Shutting down Derby engine

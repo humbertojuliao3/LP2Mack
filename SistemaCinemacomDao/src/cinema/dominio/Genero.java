@@ -1,10 +1,13 @@
 
 package cinema.dominio;
 
+import java.util.List;
+
 
 public class Genero {
     private String nome;
     private String descricao;
+    private List<Filme> filmes;
 
     public Genero(String nome, String descricao) {
         this.nome = nome;
@@ -26,6 +29,16 @@ public class Genero {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public List<Filme> getFilmes() {
+        return filmes;
+    }
+
+    public void setFilmes(List<Filme> filmes) {
+        this.filmes = filmes;
+    }
+
+    
     
     
 }

@@ -1,21 +1,24 @@
 
 package cinema.dominio;
 
+import java.util.List;
+
 
 public class Sala {
-    private short nroSala;
-    private short nroCadeira;
-    private short qtdCadeirEsp;
-    private boolean status;
+    private int nroSala;
+    private int nroCadeira;
+    private int qtdCadeirEsp;
+    private String status;
+    private List<Sessao> sessao;
 
-    public Sala(short nroSala, short nroCadeira, short qtdCadeirEsp, boolean status) {
+    public Sala(int nroSala, int nroCadeira, int qtdCadeirEsp, String status) {
         this.nroSala = nroSala;
         this.nroCadeira = nroCadeira;
         this.qtdCadeirEsp = qtdCadeirEsp;
         this.status = status;
     }
 
-    public short getNroSala() {
+    public int getNroSala() {
         return nroSala;
     }
 
@@ -23,7 +26,7 @@ public class Sala {
         this.nroSala = nroSala;
     }
 
-    public short getNroCadeira() {
+    public int getNroCadeira() {
         return nroCadeira;
     }
 
@@ -31,7 +34,7 @@ public class Sala {
         this.nroCadeira = nroCadeira;
     }
 
-    public short getQtdCadeirEsp() {
+    public int getQtdCadeirEsp() {
         return qtdCadeirEsp;
     }
 
@@ -39,12 +42,22 @@ public class Sala {
         this.qtdCadeirEsp = qtdCadeirEsp;
     }
 
-    public boolean isStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status) {
         this.status = status;
+    }
+
+    
+
+    public List<Sessao> getSessao() {
+        return sessao;
+    }
+
+    public void setSessao(List<Sessao> sessao) {
+        this.sessao = sessao;
     }
     
     
