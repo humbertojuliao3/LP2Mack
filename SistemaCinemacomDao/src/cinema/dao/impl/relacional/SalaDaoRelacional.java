@@ -79,7 +79,7 @@ public class SalaDaoRelacional implements SalaDaoInterface{
             st.setInt(2, nro_cadeira);
             st.setInt(3, qtdCadeirEsp);
             st.setString(4,status);
-         // st.setList(5,sessao);
+            st.setObject(5,sessao);
             st.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(SalaDaoRelacional.class.getName()).log(Level.SEVERE, null, ex);
