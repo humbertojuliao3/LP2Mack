@@ -76,7 +76,20 @@ public class AtorDaoRelacional implements AtorDaoInterface {
 
     @Override
     public void atualizar(Ator a) {
-        
+     PreparedStatement st;
+       String sql="UPDATE ator SET nome,nacionalidade,idade VALUES (?,?,?,?)";
+        try {
+            st = conexao.getConnection().prepareStatement(sql);
+            String nome = a.getNome();
+            String nacionalidade = a.getNacionalidade();
+            int idade = a.getIdade();
+            st.setString(1, nome);
+            st.setString(2, nacionalidade);
+            st.setInt(3, idade);
+            st.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(AtorDaoRelacional.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override

@@ -66,7 +66,24 @@ public class SalaDaoRelacional implements SalaDaoInterface{
 
     @Override
     public void atualizar(Sala s) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+      PreparedStatement st;
+       String sql="UPDATE filme SET nro_sala,nro_cadeira,qtdCadeirEsp,status,sessao VALUES (?,?,?)";
+        try {
+            st = conexao.getConnection().prepareStatement(sql);
+            int nro_sala = s.getNroSala();
+            int nro_cadeira = s.getNroSala();
+            int qtdCadeirEsp = s.getQtdCadeirEsp();
+            String status = s.getStatus();
+            List sessao = s.getSessao();
+            st.setInt(1, nro_sala);
+            st.setInt(2, nro_cadeira);
+            st.setInt(3, qtdCadeirEsp);
+            st.setString(4,status);
+         // st.setList(5,sessao);
+            st.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(SalaDaoRelacional.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     @Override

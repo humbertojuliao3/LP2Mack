@@ -7,8 +7,10 @@ public class Personagem {
     private Ator ator;
     private Filme filme;
 
-    public Personagem(String papel) {
+    public Personagem(String papel, Ator ator, Filme filme) {
         this.papel = papel;
+        this.ator = ator;
+        this.filme = filme;
     }
 
     public String getPapel() {

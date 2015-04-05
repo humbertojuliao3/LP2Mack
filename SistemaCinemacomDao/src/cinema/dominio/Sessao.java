@@ -1,7 +1,7 @@
 
 package cinema.dominio;
 
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 
@@ -11,10 +11,11 @@ public class Sessao {
     private List<Ingresso> ingressos;
     private Sala sala;
 
-    public Sessao(Date horario, Filme filme, Sala sala) {
+    public Sessao(Date horario, Filme filme, Sala sala, List<Ingresso> ingresso) {
         this.horario = horario;
         this.filme = filme;
         this.sala = sala;
+        this.ingressos = ingresso;
     }
 
     public Date getHorario() {
