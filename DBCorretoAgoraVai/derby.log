@@ -1,7 +1,7 @@
-Sat Apr 04 01:54:04 BRT 2015 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+Sat Apr 11 17:08:13 BRT 2015 : Apache Derby Servidor de Rede - 10.10.2.0 - (1582446) iniciado e pronto para aceitar conexões na porta 1527 em {3}
 ----------------------------------------------------------------
-Sat Apr 04 01:54:05 BRT 2015:
- Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-014c-82c7-5473-ffffa55b59ee
+Sat Apr 11 17:08:14 BRT 2015:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instância a816c00e-014c-aa18-cab8-ffffa55b59ee
 no diretório de banco de dados /Users/humbertojuliao/facul/LP2Mack/DBCorretoAgoraVai/SistemaDaoCinema 
 
 java.vendor=Oracle Corporation
@@ -9,10 +9,136 @@ java.runtime.version=1.8.0_40-b27
 user.dir=/Applications/NetBeans/glassfish-4.1/javadb
 os.name=Mac OS X
 os.arch=x86_64
-os.version=10.10.2
+os.version=10.10.3
 derby.system.home=/Users/humbertojuliao/facul/LP2Mack/DBCorretoAgoraVai
 Carregador de classe do banco de dados iniciado - derby.database.classpath=''
-Sat Apr 04 01:54:06 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 1777), (SESSIONID = 0), (DATABASE = SistemaDaoCinema), (DRDAID = {1}), Cleanup action starting
+Sat Apr 11 17:08:14 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2011), (SESSIONID = 1), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-953635792312808471{1}), Cleanup action starting
+Sat Apr 11 17:08:14 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2011), (SESSIONID = 1), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-953635792312808471{1}), Failed Statement is: CALL SYSIBM.MetaData()
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getClientCachedMetaData(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.METADATA(Unknown Source)
+	at org.apache.derby.exe.acf81e0010x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+New exception raised during cleanup null
+java.lang.NullPointerException
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.initRequiredPriv(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.resetContext(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.iapi.services.context.ContextManager.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Sat Apr 11 17:08:14 BRT 2015 Thread[DRDAConnThread_2,5,main] Equally severe exception raised during cleanup (ignored) null
+java.lang.NullPointerException
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.initRequiredPriv(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.resetContext(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.iapi.services.context.ContextManager.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:08:50 BRT 2015 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'a' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Banco de dados 'a' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Banco de dados 'a' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sat Apr 11 17:08:50 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = a), (DRDAID = {2}), Banco de dados 'a' não encontrado.
+Sat Apr 11 17:09:01 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2014), (SESSIONID = 2), (DATABASE = SistemaDaoCinema), (DRDAID = {3}), Cleanup action starting
 java.sql.SQLNonTransientConnectionException: Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
@@ -62,27 +188,383 @@ java.sql.SQLException: Ocorreu uma falha de autenticação da conexão.  Motivo:
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
 ============= end nested exception, level (1) ===========
 Cleanup action completed
-Sat Apr 04 01:54:06 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = SistemaDaoCinema), (DRDAID = {1}), Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
+Sat Apr 11 17:09:01 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = SistemaDaoCinema), (DRDAID = {3}), Ocorreu uma falha de autenticação da conexão.  Motivo: Autenticação inválida..
+Sat Apr 11 17:10:09 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2016), (SESSIONID = 4), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-881578198274764790{4}), Cleanup action starting
+Sat Apr 11 17:10:09 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2016), (SESSIONID = 4), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-881578198274764790{4}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+New exception raised during cleanup null
+java.lang.NullPointerException
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.initRequiredPriv(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.resetContext(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.iapi.services.context.ContextManager.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Sat Apr 11 17:10:09 BRT 2015 Thread[DRDAConnThread_2,5,main] Equally severe exception raised during cleanup (ignored) null
+java.lang.NullPointerException
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.initRequiredPriv(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.resetContext(Unknown Source)
+	at org.apache.derby.impl.sql.compile.CompilerContextImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.iapi.services.context.ContextManager.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.cleanupOnError(Unknown Source)
+	at org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.ConnectionChild.handleException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:11:58 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2020), (SESSIONID = 6), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-724515161270109921{5}), Cleanup action starting
+Sat Apr 11 17:11:58 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2020), (SESSIONID = 6), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-724515161270109921{5}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:12:37 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2023), (SESSIONID = 8), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-722544836433096647{6}), Cleanup action starting
+Sat Apr 11 17:12:37 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2023), (SESSIONID = 8), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-722544836433096647{6}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:13:30 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2026), (SESSIONID = 10), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-737181535221998015{7}), Cleanup action starting
+Sat Apr 11 17:13:30 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2026), (SESSIONID = 10), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-737181535221998015{7}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:13:50 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2029), (SESSIONID = 12), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-652457567232069699{8}), Cleanup action starting
+Sat Apr 11 17:13:50 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2029), (SESSIONID = 12), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-652457567232069699{8}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
+Sat Apr 11 17:13:58 BRT 2015 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sat Apr 11 17:13:58 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = SistemaCinema), (DRDAID = {9}), Banco de dados 'SistemaCinema' não encontrado.
+Sat Apr 11 17:14:01 BRT 2015 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Banco de dados 'SistemaCinema' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.Driver20.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sat Apr 11 17:14:01 BRT 2015 Thread[DRDAConnThread_2,5,main] (DATABASE = SistemaCinema), (DRDAID = {10}), Banco de dados 'SistemaCinema' não encontrado.
+Sat Apr 11 17:14:15 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2032), (SESSIONID = 14), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-651050192348491959{11}), Cleanup action starting
+Sat Apr 11 17:14:15 BRT 2015 Thread[DRDAConnThread_2,5,main] (XID = 2032), (SESSIONID = 14), (DATABASE = SistemaDaoCinema), (DRDAID = ��������.����-651050192348491959{11}), Failed Statement is: CALL SYSIBM.SQLTABLES('', '', '', '', 'GETCATALOGS=1')
+java.lang.NullPointerException
+	at java.io.StringReader.<init>(StringReader.java:50)
+	at org.apache.derby.impl.services.uuid.BasicUUID.<init>(Unknown Source)
+	at org.apache.derby.impl.services.uuid.BasicUUIDFactory.recreateUUID(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SYSSTATEMENTSRowFactory.buildDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndexMinion(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getDescriptorViaIndex(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptorIndex1Scan(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getUncachedSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.SPSNameCacheable.setIdentity(Unknown Source)
+	at org.apache.derby.impl.services.cache.ConcurrentCache.find(Unknown Source)
+	at org.apache.derby.impl.sql.catalog.DataDictionaryImpl.getSPSDescriptor(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getSimpleQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getCatalogs(Unknown Source)
+	at org.apache.derby.catalog.SystemProcedures.SQLTABLES(Unknown Source)
+	at org.apache.derby.exe.aca02ac013x014cxaa18xcab8xffffa55b59ee0.g0(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.derby.impl.services.reflect.ReflectMethod.invoke(Unknown Source)
+	at org.apache.derby.impl.sql.execute.CallStatementResultSet.open(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.executeStmt(Unknown Source)
+	at org.apache.derby.impl.sql.GenericPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedCallableStatement.executeStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAStatement.execute(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseEXCSQLSTT(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Cleanup action completed
 ----------------------------------------------------------------
-Sat Apr 04 01:55:43 BRT 2015: Shutting down Derby engine
+Sat Apr 11 20:19:25 BRT 2015: Shutting down Derby engine
 ----------------------------------------------------------------
-Sat Apr 04 01:55:43 BRT 2015:
-Encerrando a instância a816c00e-014c-82c7-5473-ffffa55b59ee
+Sat Apr 11 20:19:25 BRT 2015:
+Encerrando a instância a816c00e-014c-aa18-cab8-ffffa55b59ee
 ----------------------------------------------------------------
-<<<<<<< Updated upstream
-Sat Apr 04 01:13:30 BRT 2015:
- Inicializando o Derby vers�o The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): inst�ncia ed8940a7-014c-82a1-92d2-00005a934e19
-no diret�rio de banco de dados C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorretoAgoraVai\SistemaDaoCinema 
-
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_11-b12
-user.dir=C:\Program Files\Java\jdk1.8.0_11\db
-os.name=Windows 8.1
-os.arch=amd64
-os.version=6.3
-derby.system.home=C:\Users\DANIEL\Documents\GitHub\LP2Mack\DBCorretoAgoraVai
-Carregador de classe do banco de dados iniciado - derby.database.classpath=''
-----------------------------------------------------------------
-Sat Apr 04 02:05:52 BRT 2015: Shutting down Derby engine
-=======
->>>>>>> Stashed changes
